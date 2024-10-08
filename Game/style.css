@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  #board {
+    display: grid;
+    grid-template-columns: repeat(7, 60px);
+    grid-template-rows: repeat(6, 60px);
+    gap: 5px;
+    margin: 20px auto;
+    width: fit-content;
+  }
+  
+  .cell {
+    width: 60px;
+    height: 60px;
+    background-color: #2196F3;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .cell.red {
+    background-color: red;
+  }
+  
+  .cell.yellow {
+    background-color: yellow;
+  }
+  
+  #reset {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #reset:hover {
+    background-color: #e64a19;
+  }
+  
